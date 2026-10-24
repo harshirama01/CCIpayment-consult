@@ -1,6 +1,8 @@
 # CCI Payments — Next.js
 
-Next.js 15 (App Router, TypeScript) recreation of the single-file CCI Payments site.
+Next.js 16 (App Router, TypeScript, Turbopack) recreation of the single-file CCI Payments site.
+
+Requires Node.js 20.9 or newer.
 
 ```bash
 npm install
