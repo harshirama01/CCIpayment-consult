@@ -10,14 +10,14 @@ import "@fontsource/open-sans/600.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://ccipayments.com.ng"),
+  metadataBase: new URL("https://www.ccipaymentconsult.com.ng"),
   title: "CCI Payments | International Payments Made Easier",
   description: "CCI Payments helps individuals and businesses make and receive international payments.",
   openGraph: {
     title: "CCI Payments",
     description: "Making international payments easier, faster and more affordable.",
     type: "website",
-    url: "https://ccipayments.com.ng",
+    url: "https://www.ccipaymentconsult.com.ng",
   },
 };
 

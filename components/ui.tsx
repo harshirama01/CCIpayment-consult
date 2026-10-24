@@ -93,7 +93,7 @@ export function Info({ website = true }: { website?: boolean }) {
   return (
     <>
       <div><a href={CONFIG.wa} target="_blank" rel="noopener noreferrer">WhatsApp: {CONFIG.phone}</a></div>
-      {website ? <div>Website: ccipayments.com.ng</div> : null}
+      {website ? <div>Website: www.ccipaymentconsult.com.ng</div> : null}
       <div className="m"><a href={`mailto:${CONFIG.email}`}>{CONFIG.email}</a></div>
       {CONFIG.hours.map((h) => <div key={h}>{h}</div>)}
     </>
