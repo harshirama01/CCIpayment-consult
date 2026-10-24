@@ -20,3 +20,8 @@ npm run build && npm start
 - Fonts are self-hosted via `@fontsource` (Unbounded, Open Sans), so builds don't need Google Fonts access.
 - The form never posts anywhere: it validates, then opens `wa.me` with the prepared message, as before.
 - One deliberate change from the original: header links and the quote button no longer wrap onto two lines at desktop widths.
+
+## Analytics (optional)
+Google Analytics 4 and the Meta Pixel are wired in `components/Analytics.tsx` and stay off until you set IDs.
+Copy `.env.example` to `.env.local` locally, or add `NEXT_PUBLIC_GA_ID` and `NEXT_PUBLIC_META_PIXEL_ID` in Vercel
+(Settings → Environment Variables), then redeploy. Never commit real `.env*.local` files.

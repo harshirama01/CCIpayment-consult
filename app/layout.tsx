@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import RouteEffects from "@/components/RouteEffects";
+import Analytics from "@/components/Analytics";
 import "@fontsource/unbounded/500.css";
 import "@fontsource/unbounded/600.css";
 import "@fontsource/open-sans/400.css";
@@ -38,6 +39,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Footer />
         <WhatsAppFloat />
         <RouteEffects />
+        <Analytics />
       </body>
     </html>
   );
