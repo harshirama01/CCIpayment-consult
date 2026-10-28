@@ -6,13 +6,14 @@ import { usePathname } from "next/navigation";
 
 /**
  * Google tag (GA4) and Meta Pixel.
- * GA4 defaults to the CCI Payments Measurement ID below (a public ID, visible in any page source);
- * set NEXT_PUBLIC_GA_ID to override it. The Meta Pixel loads only when NEXT_PUBLIC_META_PIXEL_ID is set.
+ * Both default to the CCI Payments IDs below (public IDs, visible in any page source).
+ * Set NEXT_PUBLIC_GA_ID / NEXT_PUBLIC_META_PIXEL_ID to override them.
  * IDs are validated before being written into the inline scripts.
  */
 const DEFAULT_GA_ID = "G-7JZDVHYNB7";
 const GA_ID = (process.env.NEXT_PUBLIC_GA_ID || DEFAULT_GA_ID).trim();
-const META_ID = (process.env.NEXT_PUBLIC_META_PIXEL_ID ?? "").trim();
+const DEFAULT_META_ID = "27281265258211656";
+const META_ID = (process.env.NEXT_PUBLIC_META_PIXEL_ID || DEFAULT_META_ID).trim();
 const gaOk = /^(G|GT|AW)-[A-Z0-9]{4,}$/.test(GA_ID);
 const metaOk = /^\d{6,20}$/.test(META_ID);
 

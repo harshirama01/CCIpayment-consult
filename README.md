@@ -23,7 +23,7 @@ npm run build && npm start
 
 ## Analytics (optional)
 Google Analytics 4 and the Meta Pixel are wired in `components/Analytics.tsx`.
-- GA4 is on by default using the CCI Payments Measurement ID in that file. Set `NEXT_PUBLIC_GA_ID` to override it.
-- The Meta Pixel stays off until you set `NEXT_PUBLIC_META_PIXEL_ID`.
+- GA4 and the Meta Pixel are on by default using the CCI Payments IDs in that file.
+- Set `NEXT_PUBLIC_GA_ID` or `NEXT_PUBLIC_META_PIXEL_ID` to override them.
 
 Set variables in Vercel (Settings → Environment Variables) and redeploy, or copy `.env.example` to `.env.local` locally. Never commit real `.env*.local` files.
