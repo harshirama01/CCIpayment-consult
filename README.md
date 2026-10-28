@@ -22,6 +22,8 @@ npm run build && npm start
 - One deliberate change from the original: header links and the quote button no longer wrap onto two lines at desktop widths.
 
 ## Analytics (optional)
-Google Analytics 4 and the Meta Pixel are wired in `components/Analytics.tsx` and stay off until you set IDs.
-Copy `.env.example` to `.env.local` locally, or add `NEXT_PUBLIC_GA_ID` and `NEXT_PUBLIC_META_PIXEL_ID` in Vercel
-(Settings → Environment Variables), then redeploy. Never commit real `.env*.local` files.
+Google Analytics 4 and the Meta Pixel are wired in `components/Analytics.tsx`.
+- GA4 is on by default using the CCI Payments Measurement ID in that file. Set `NEXT_PUBLIC_GA_ID` to override it.
+- The Meta Pixel stays off until you set `NEXT_PUBLIC_META_PIXEL_ID`.
+
+Set variables in Vercel (Settings → Environment Variables) and redeploy, or copy `.env.example` to `.env.local` locally. Never commit real `.env*.local` files.
